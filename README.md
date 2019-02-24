@@ -6,5 +6,6 @@ The repository has the R code and other files required for the Assignment of Wee
 The repository consists of three files:
 - This readme file.
 - A codebook with explanations about the the variables, the data, and the steps that were taken in the process.
-- a .R file, with the code to perform the analysis.
+- An .R file, with the code to perform the analysis.
+
 An important note is that the script (run_analysis.R) assumes that the data is present in the working directory and that it is uncompressed and that the names of the files were not altered.
