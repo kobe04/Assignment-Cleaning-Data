@@ -36,7 +36,25 @@ Next, the variable name for the *y* set was changed to "Activity". The variable 
 The assignment asked that the dataset would only contain variables that held either a mean or a standard deviation. So, a subset of *X* was created on this basis.
 In order to do this, *features.txt* was used to establish the variable names and to select the appropriate variables.
 
-Then, the three sets (*X*, *y*, and *subject*) were merged with *cbind()*. After that, the 
+Then, the three sets (*X*, *y*, and *subject*) were merged with *cbind()*. After that, the values in the variable "Activity" were changed to a factor-variable with the activity-names. These names were found in *activity_labels.txt*.
+
+Then, the names of the other variables were altered so that they become more understandable and readable.
+
+The final step was to write the tidy dataset. This set contains the mean for each variable per subject and activity. This resulted in **Tidy dataset.txt**
 
 
 ## The Variables
+
+There are 88 variables in the tidy dataset. Two variables are factor-variables. The other 86 are numerical variables.
+- *Subject* This variable holds a number to identify which subject performed the test or training that resulted in the data. There are 30 subjects.
+- *Activity* This variable describes which activity was performed. There are six possible activities:
+    - Walking
+    - Standing
+    - Laying
+    - Walking Downstairs
+    - Walking Upstairs
+    - Sitting
+
+Because **Tidy dataset.txt** contains the means per subject and per activity, there are a total of 180 observations.
+
+The other 86 variables contain numeric data. The range of all these variables is -1:1. The variables that end on *Mean()* contain the aggregate of the mean. The variables that end on *Standard Deviation()* contain the aggregate of the Standard deviation.
